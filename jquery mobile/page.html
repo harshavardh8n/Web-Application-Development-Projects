@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+     <div data-role="page" id="main">
+        <div data-role="header">
+            <h1>Hello JI</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit repellendus tenetur id, veritatis non earum ipsum, incidunt iusto, fugit omnis aut quas? Amet accusamus nostrum voluptates minima corrupti ut eaque reprehenderit sunt quae.</p>
+            <a href="#About" style="text-decoration: none;" class="ui-btn" data-transition="flip">Click me
+            </a>
+        </div>
+        <div data-role="footer">
+            <h4>
+                &copy;copyright to Harshavardhan Industries
+            </h4>
+            
+        </div>
+    </div>
+
+   <!-- Next Page -->
+    
+
+    
+    <div data-role="page" id="About">
+        <div data-role="header">
+            <h1>About Page</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p> About Page/......Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit repellendus tenetur id, veritatis non earum ipsum, incidunt iusto, fugit omnis aut quas? Amet accusamus nostrum voluptates minima corrupti ut eaque reprehenderit sunt quae.</p>
+            <a href="#main" style="text-decoration: none;" class="ui-btn">Click me to main page </a>
+            <a href="#form1" style="text-decoration: none;" class="ui-btn">Click me to form </a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>
+                &copy;copyright to Harshavardhan Industries
+            </h4>
+            
+        </div>
+    </div> 
+
+    <div data-role="page" id="form1">
+        <div data-role="header">
+            <h1>Feedback Form</h1>
+        </div>
+        <div data-role="content">
+            <form action="#" method="get">
+                <label for="naming">Enter your name:</label> 
+                <input type="text" id="naming">
+                <label for="emailing">Enter your Email:</label> 
+                <input type="email" id="emailing">
+                <label for="rating">Rate our service</label>
+                <!-- <ul data-role="listview" data-inset="true">
+                    <li data-icon=""><a href="#">Very good</a> </li>
+                    <li>good</li>
+                    <li>bad</li>
+                    <li>Very bad</li>
+                </ul> -->
+                <label for="rad1">
+                    Excellent
+                </label>
+                <input type="radio" name="rad" id="rad1">
+                <label for="rad2">
+                    Good
+                </label>
+                <input type="radio" name="rad" id="rad2">
+                <label for="rad3">
+                    Bad
+                </label>
+                <input type="radio" name="rad" id="rad3">
+                <label for="rad4">
+                    Very Bad
+                </label>
+                <input type="radio" name="rad" id="rad4">
+
+                <input type="submit" value="submit">
+
+
+
+                
+            </form>
+            
+        </div>
+        <div data-role="footer"></div>
+    </div>
+    
+</body>
+</html>

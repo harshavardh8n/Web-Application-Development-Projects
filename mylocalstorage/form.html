@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+
+    <form action="#" id="registrationform">
+        <label for="name">name</label>
+        <input type="text" id="name"><br>
+        <label for="age">age</label>
+        <input type="number" id="age"><br>
+        <label for="male">male</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">female</label>
+        <input type="radio" name="gender" value="female" id="female"><br>
+        <input type="submit" value="Cick submit">
+    </form>
+
+<script>
+    document.getElementById("registrationform").addEventListener("submit",function(e){
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const age = document.getElementById("age").value;
+        const gender = document.querySelector('input[name="gender"]:checked').value;
+
+        const FormData={
+            name:name,
+            age:age,
+            gender:gender
+
+        }
+
+        const FormdataString = JSON.stringify(FormData);
+
+        alert(FormdataString);
+
+        localStorage.setItem("FormData",FormdataString);
+        window.location.href="display.html"
+    })
+</script>
+    
+</body>
+</html>
